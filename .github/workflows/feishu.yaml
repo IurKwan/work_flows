@@ -5,16 +5,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test_and_apk:
-    name: "send notify to feishu"
+  release:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      pull-requests: write
-
-    timeout-minutes: 60
-
+    
     steps:
         - name: Send feishu message
       env:
